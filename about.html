@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mind Muse | About</title>
+  <link rel="stylesheet" href="about.css" />
+  <link rel="icon" href="favicon.png" type="image/png"> 
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars-bg"></div>
+
+  <!-- Profile Picture -->
+  <div class="profile-pic-container">
+    <img src="opal.jpg" alt="Your Picture" class="profile-pic">
+  </div>
+  
+<a href="index.html" class="home-btn">🏠 Home</a>
+
+  <!-- Header -->
+  <header>
+    <h1>Behind the Muse</h1>
+    <p class="sub-heading">✨ Your sanctuary of thoughts, moods, and dreams ✨</p>
+  </header>
+
+  <!-- About Sections -->
+  <section class="about-container">
+    <div class="about-card">
+      <h2>🌙 Our Purpose</h2>
+      <p>Mind Muse is your celestial space to reflect, express, and evolve. Whether you're spilling your midnight thoughts, tracking moods, or reaching goals — every corner is crafted to mirror your inner universe.</p>
+    </div>
+
+    <div class="about-card">
+      <h2>💫 Features</h2>
+      <ul>
+        <li>Dreamy Mood Journal & Tracker</li>
+        <li>Goal-setting with a magical twist</li>
+        <li>Daily prompts & affirmations</li>
+        <li>Custom quotes that vibe with your emotions</li>
+      </ul>
+    </div>
+
+    <div class="about-card">
+      <h2>🧚🏽‍♀️ Why We Created This</h2>
+      <p>Born from the stars and shadows of overthinking minds, Mind Muse was created to bring beauty to the chaos and give every emotion a home. Your mind is magic — we just gave it a canvas.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with 🌌 by Dreamers of the Muse
+    </p>
+    <p>Opal Gupta</p>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" onclick="scrollToTop()">🌙</button>
+
+  <!-- Optional Floating Stars -->
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Optional floating stars effect
+    for (let i = 0; i < 25; i++) {
+      let star = document.createElement("div");
+      star.className = "floating-star";
+      star.style.left = Math.random() * 100 + "vw";
+      star.style.top = Math.random() * 100 + "vh";
+      document.body.appendChild(star);
+    }
+  </script>
+</body>
+</html>

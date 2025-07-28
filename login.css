@@ -1,0 +1,165 @@
+/* login css */
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Dreamy Background */
+body {
+  background: linear-gradient(135deg, #f8e9ff, #e4f0ff, #f3e7ff);
+  background-size: 400% 400%;
+  animation: bgAnimation 20s ease infinite;
+}
+
+@keyframes bgAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Container */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Box */
+.login-box {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 340px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  color: #5d3a84;
+  margin-bottom: 30px;
+}
+
+.title span {
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  color: #b87aff;
+}
+
+/* Inputs */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.login-form input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Options */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #4d3e6e;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.forgot {
+  color: #875ee3;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #c68dfd;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-form button:hover {
+  background: #aa6df4;
+}
+
+/* Note */
+.note {
+  margin-top: 20px;
+  font-size: 13px;
+  font-style: italic;
+  color: #7f59b3;
+  font-family: 'Dancing Script', cursive;
+}
+
+.signup-link {
+  font-size: 13px;
+  margin-top: 10px;
+  color: #4e3b75;
+}
+
+.signup-link a {
+  color: #a56bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #e5b0ff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #ca88f3;
+}

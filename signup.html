@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up | Mind Muse</title>
+  <link rel="icon" href="favicon.png" type="image/png"> 
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h1 class="title">Join <span>Mind Muse</span></h1>
+      <form class="login-form" onsubmit="return signUpUser(event)">
+        <input type="text" id="newUsername" placeholder="Choose a Username" required />
+        <input type="password" id="newPassword" placeholder="Choose a Password" required />
+        <button type="submit">Create Account</button>
+        <p class="note">🌙 Welcome, fellow dreamer!</p>
+        <p class="signup-link">Already have an account? <a href="login.html">Log in</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function signUpUser(event) {
+      event.preventDefault();
+
+      const newUser = document.getElementById("newUsername").value.trim();
+      const newPass = document.getElementById("newPassword").value.trim();
+
+      // Save to localStorage as a basic simulation
+      localStorage.setItem("registeredUser", newUser);
+      localStorage.setItem("registeredPass", newPass);
+
+      alert("Account created! Please log in now.");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

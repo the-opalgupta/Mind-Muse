@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(to right top, #101020, #1a1233);
+  color: #ffffffcc;
+  position: relative;
+  min-height: 100vh;
+}
+
+.background-layer::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#ffffff0a 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 2rem 1rem;
+  z-index: 1;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3rem;
+  color: #f9eaff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.quote {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  color: #d2baff;
+  margin-top: 0.5rem;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.panel {
+  background: linear-gradient(135deg, #2c1f4a, #3d2e5f);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.panel h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffdcfa;
+}
+
+.mood-stats p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.mood-graph-placeholder {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-style: italic;
+  border-radius: 12px;
+  color: #ccc;
+}
+
+.journal-section ul,
+.becoming-section ul {
+  list-style-type: none;
+  padding-left: 1rem;
+  line-height: 1.6;
+}
+
+.status {
+  font-style: italic;
+  color: #b0ffea;
+}
+
+/* Progress bar */
+.progress-container {
+  width: 100%;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-top: 1rem;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, #ffd6ff, #b2fefa);
+  width: 0%;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+/* Home button */
+.home-btn {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-family: 'Dancing Script', cursive;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px 16px;
+  border-radius: 20px;
+  color: #f9d7ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Dancing Script', cursive;
+  color: #999;
+}

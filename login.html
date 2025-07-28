@@ -1,0 +1,61 @@
+<!-- login  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mind Muse | Login</title>
+  <link rel="icon" href="favicon.png" type="image/png"> 
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h1 class="title">Welcome Back to <span>Mind Muse</span></h1>
+<button onclick="logoutUser()" class="logout-btn">Logout</button>
+
+      <form class="login-form" onsubmit="return loginUser(event)">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+
+        <div class="options">
+          <label><input type="checkbox" id="remember"> Remember Me</label>
+          <a href="#" class="forgot">Forgot Password?</a>
+        </div>
+
+        <button type="submit">Log In</button>
+        <!-- Add this below the login form button -->
+<p class="note">✨ Let your thoughts wander ✨</p>
+<p class="signup-link">Don’t have an account? <a href="signup.html">Sign up</a></p>
+
+      </form>
+    </div>
+  </div>
+<script>
+  const loginForm = document.getElementById("loginForm");
+console.log("Username entered:", username);
+console.log("Password entered:", password);
+console.log("Redirecting to profile.html...");
+
+  loginForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    if (username === "museuser" && password === "stardust") {
+      if (document.getElementById("rememberMe").checked) {
+        localStorage.setItem("loggedIn", "true");
+      }
+      window.location.href = "profile.html";
+    } else {
+      alert("Invalid credentials. Try 'museuser' & 'stardust'.");
+    }
+  });
+</script>
+
+  <!-- <script src="login.js"></script> -->
+</body>
+</html>

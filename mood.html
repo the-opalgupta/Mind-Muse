@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mind Muse | Inner Muse 🥀</title>
+  <link rel="stylesheet" href="mood.css">
+<link rel="icon" href="favicon.png" type="image/png"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Cookie&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Sacramento&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!--img / logo for moodify-->
+    <h1>
+      Inner Muse 🥀
+    </h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="journal.html">Midnight Spill (Your Personal Diary)</a></li>
+        <li><a href="goals.html">Becoming(Growth Tracker)</a></li>
+      </ul>
+    </nav>
+  </header>
+  <hr>
+  <main>
+    <!--emotional block/ log -->
+    <p id="intro"> Welcome to Inner Muse </p>
+    <p id="tag"> A reflection into inner you. </p>
+    <p id="quote">“Not just a mood tracker. It’s a self-check ritual.”</p>
+    <section class="track">
+      <h2>How are you feeling today?</h2>
+      <form id="mood-form">
+        <div class="mood-slider">
+          <label><input type="radio" name="mood" value="Loved" />💖<br><span>Loved</span></label>
+          <label><input type="radio" name="mood" value="Grateful" />🙏<br><span>Grateful</span></label>
+          <label><input type="radio" name="mood" value="Happy" />😄<br><span>Happy</span></label>
+          <label><input type="radio" name="mood" value="Calm" />😌<br><span>Calm</span></label>
+          <label><input type="radio" name="mood" value="Anxious" />😬<br><span>Anxious</span></label>
+          <label><input type="radio" name="mood" value="Overwhelmed" />😵‍💫<br><span>Overwhelmed</span></label>
+          <label><input type="radio" name="mood" value="Sad" />😔<br><span>Sad</span></label>
+          <label><input type="radio" name="mood" value="Angry" />😡<br><span>Angry</span></label>
+        </div>
+      </form>
+    </section>
+
+    <section class="quote-wall">
+      <h3>✨ A little spark to fuel your Inner Muse ✨</h3>
+      <div class="quote-box" id="quote-box">
+
+        <!-- Default quote can be shown initially -->
+
+        <p>"You survived every single thing you thought would break you. So how dare you think this little problem is
+          enough of a big deal to stop you?"</p>
+      </div>
+    </section>
+<!-- Scroll to Top Button -->
+<button id="top-btn" title="Go to top">↑</button>
+
+<!-- Profile Page Button -->
+<a href="profile.html" id="profile-btn" title="Your Profile">👤</a>
+
+  </main>
+  <hr>
+  <footer>
+    “Emotions ≠ drama. They’re valid.”
+  </footer>
+  <script src="mood.js"></script>
+</body>
+
+</html>

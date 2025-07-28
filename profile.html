@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mind Muse | Profile</title>
+  <link rel="icon" href="favicon.png" type="image/png"> 
+
+  <link rel="stylesheet" href="profile.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Cinzel+Decorative&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-layer"></div>
+
+  <!-- Navigation -->
+  <a href="index.html" class="home-btn">🏠 Home</a>
+
+  <!-- Heading -->
+  <header>
+    <h1>Your Muse Profile</h1>
+    <p class="quote">“Track your tides. Grow with grace.”</p>
+  </header>
+
+  <main class="dashboard">
+    <!-- Mood History -->
+    <section class="panel mood-section">
+      <h2>Mood Tracker 🌙</h2>
+      <div class="mood-stats">
+        <p>😊 Happy: <span id="happyCount">0</span></p>
+        <p>😔 Sad: <span id="sadCount">0</span></p>
+        <p>😡 Angry: <span id="angryCount">0</span></p>
+        <p>🧘 Calm: <span id="calmCount">0</span></p>
+      </div>
+      <div class="mood-graph-placeholder">📊 Mood history graph coming soon...</div>
+    </section>
+
+    <!-- Journal Entries -->
+    <section class="panel journal-section">
+      <h2>Midnight Spills 📝</h2>
+      <ul id="journalEntries"></ul>
+    </section>
+
+    <!-- Becoming Tracker -->
+    <section class="panel becoming-section">
+      <h2>Becoming Tracker 🌱</h2>
+      <ul id="goalProgress"></ul>
+      <div class="progress-container">
+        <div class="progress-bar" id="goalProgressBar"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>✨ Keep blooming with the moonlight ✨</p>
+  </footer>
+
+  <script src="profile.js"></script>
+</body>
+</html>

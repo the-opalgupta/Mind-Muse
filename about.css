@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: linear-gradient(to top left, #1e184f, #342c77);
+  overflow-x: hidden;
+  position: relative;
+}
+
+.stars-bg::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://i.imgur.com/qV0fI6y.png') repeat;
+  opacity: 0.15;
+  z-index: 0;
+  animation: float 60s linear infinite;
+}
+
+@keyframes float {
+  from { background-position: 0 0; }
+  to { background-position: 1000px 1000px; }
+}
+
+header {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3rem;
+  color: #fceaff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.sub-heading {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: #ffdefe;
+  margin-top: 0.5rem;
+}
+
+.about-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: auto;
+  z-index: 1;
+  position: relative;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-card h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #ffd6ff;
+  margin-bottom: 1rem;
+}
+
+.about-card p, .about-card ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f8f5ff;
+}
+
+.about-card ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.about-card li::before {
+  content: '✨';
+  margin-right: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  z-index: 1;
+  position: relative;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Profile Image */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #fceaff;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic-container {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 2;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.4);
+}
+.preview-cards a, .entry a {
+  text-decoration: none;
+}
+
+.home-btn {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-family: 'Dancing Script', cursive;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 18px;
+  border-radius: 20px;
+  color: #ffd6ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.home-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Scroll to top button */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #fff0ff;
+  color: #6a00a3;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  box-shadow: 0 0 10px #fff0ff;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ffe0ff;
+}
+
+/* Floating star particles */
+.floating-star {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: floatStar 10s linear infinite;
+}
+
+@keyframes floatStar {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100vh); }
+}
+
+a{
+text-decoration: none;
+color:#ccc ;
+font-family: 'Courier New', Courier, monospace;
+}
